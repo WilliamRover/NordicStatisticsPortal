@@ -365,6 +365,7 @@ pngBtn.onclick = (event) => {
         link.href = dataUrl
         link.click()
     })
+    showNotif("map.overlay.downloadMap")
 }
 
 // Chart
@@ -426,4 +427,5 @@ async function drawChart(selectedArea) {
             spaceRatio: 0.5
         }
     })
+    showNotif("map.overlay.chartGenerate")
 }

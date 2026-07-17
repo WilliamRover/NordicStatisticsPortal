@@ -88,6 +88,10 @@
     },
 
     "map": {
+        "overlay": {
+            "downloadMap": "Ladda ner karta...",
+            "chartGenerate": "Genererar diagram..."
+        },
         "generalParameter": {
             "title": "Allmänna parametrar:",
             "years": "År:"

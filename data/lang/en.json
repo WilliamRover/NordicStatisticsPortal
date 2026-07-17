@@ -88,6 +88,10 @@
     },
 
     "map": {
+        "overlay": {
+            "downloadMap": "Downloading map...",
+            "chartGenerate": "Generating chart..."
+        },
         "generalParameter": {
             "title": "General parameters:",
             "years": "Years:"

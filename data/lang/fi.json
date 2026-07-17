@@ -88,6 +88,10 @@
 },
 
     "map": {
+        "overlay": {
+            "downloadMap": "Ladataan karttaa...",
+            "chartGenerate": "Luodaan kaaviota..."
+        },
         "generalParameter": {
             "title": "Yleiset parametrit:",
             "years": "Vuodet:"
