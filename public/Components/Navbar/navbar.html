@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preload" href="../Components/Navbar/navbar.css" as="style">
+    <link rel="preload" href="../Components/Navbar/navbar.js" as="script">
+    <link rel="preload" href="../lang.js" as="script">
+    <link rel="stylesheet" href="../Components/shared.css">
+    <link rel="stylesheet" href="../Components/Navbar/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto&display=swap" rel="stylesheet">
+<body>
+    <div class="navbar p-0">
+        <div class="nav1"><h1 class="iosevka-charon-light" idLan="navbar.title">NORDIC STATISTICS PORTAL</h1></div>
+        <div class="nav2">
+            <div class="left-side">
+                <a href="../Homepage/" idLan="navbar.left-side.home">Home</a>
+                <a href="../Chart/" idLan="navbar.left-side.chart">Chart</a>
+                <a href="../Map/" idLan="navbar.left-side.map">Map</a>
+            </div>
+            
+            <div class="right-side">
+                <div class="lan" id ="lan">
+                    <button class="lanbtn" id="lanbtnID"><img src="" id="flagCur" class="flagImg" alt=""><span id="curLan" class="lanSpan"></span><i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-list" id="dropdownList">
+                        <button id="lanButtonTop"><div class="flagDrop"><img src="" id="flag1" class="flagImg" alt=""><span id="topLan" class="lanSpan"></span></div></button>
+                        <hr id="line">
+                        <button id="lanButtonBottom"><div class="flagDrop"><img src="" id="flag2" class="flagImg" alt=""><span id="botLan" class="lanSpan"></span></div></button>
+                    </div>
+                </div>
+                <div class="line2"><span>|</span></div>
+                <div class="light-dark" id="themeSwitch">
+                    <span id="ldStatus"></span>
+                    <button class="ldbtn" id="LDbtn">
+                         <div class="btnOutside">
+                            <div class="btnInside"></div>
+                         </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <span idLan="">Random text</span>
+    </div>
+    <script src="../Components/Navbar/navbar.js" async defer type="module"></script>
+    <script src="../lang.js" async defer type="module"></script>
+</body>
+</html>

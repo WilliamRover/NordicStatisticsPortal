@@ -1,0 +1,231 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.midpage {
+    /* width: 75rem; */
+    margin: 0 auto;
+    /* font-family: MulishSEMIBOLD; */
+    margin-top:3.5rem;
+}
+
+.navbar {
+    width:100%;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+/* TOP NAV */
+.navbar .nav1 {
+    width: 100%;
+    padding: 0.8em;
+    background-color: #7B91C5;
+    color: #F3F7FF;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav1 h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* BOT NAV */
+
+.navbar .nav2 {
+    width: 100%;
+    height:2.5em;
+    background-color: #556690;
+    color: #F3F7FF;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+/* Left side */
+.navbar .nav2 .left-side {
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.navbar .nav2 .left-side a {
+    color: #F3F7FF;
+    margin-right:1.3rem;
+    transition: 0.4s;
+    /* letter-spacing: 0.5px; */
+    font-size: 1.1rem;
+}
+
+.navbar .nav2 .left-side a:hover {
+    color: #96b9ff;
+}
+/* Right side */
+
+.navbar .right-side {
+  width:19rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.lan {
+  position: relative;
+  display: inline-block;
+  font-size:1rem;
+}
+.lan img {
+  width:2rem;
+}
+.lanbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #E9F2FF;
+  display: flex;
+  align-items: center;
+}
+.dropdown-list {
+  display: var(--lan-show);
+  position: absolute;
+  margin-top: 0.75rem;
+  background: var(--bg-color);
+  border-radius: 0.6rem;
+  width: 11rem;
+  /* height:5rem; */
+  box-shadow: 0 0.8rem 1.6rem var(--lan-shadow);
+  /* padding: 0.5rem 0; */
+  z-index: 20;
+}
+.dropdown-list button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 0.6rem;
+}
+.dropdown-list #lanButtonTop {
+  border-radius: 0.6rem 0.6rem 0px 0px;
+}
+.dropdown-list #lanButtonBottom {
+  border-radius: 0px 0px 0.6rem 0.6rem;
+}
+.dropdown-list button:hover{
+  background-color: var(--lan-hover);
+}
+.dropdown-list span {
+  color:var(--prim-color-3);
+}
+.dropdown-list hr {
+  color:var(--prim-color-3);
+  margin:0px 0px;
+}
+.dropdown-list .flagDrop, hr {
+  display: block;
+  margin:10px 16px;
+}
+.flagImg {
+  margin-right: 0.521vw;
+}
+#curLan {
+  margin-right:0.3vw;
+}
+.right-side .line2 {
+  color: #E9F2FF;
+}
+.light-dark button{
+  border: none;
+  background: none;;
+}
+.light-dark span {
+  font-size: 1rem;
+  color: #E9F2FF;
+}
+/* .light-dark img {
+   width: 2.6vw;
+   height: 2.75vh;
+} */
+
+.light-dark .btnOutside {
+  width: 2.5rem;
+  height: 1.25rem;
+  background-color: var(--bg-color);
+  border-radius: 2rem;
+  transform: translateY(20%);
+}
+.btnOutside .btnInside {
+  position: relative;
+  float:var(--float-ld);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: var(--ld-color);
+  /* top: ; */
+  /* transform: translateY(-50%); */
+  margin: 0.1rem 0.2rem 0 0.2rem;
+}
+.line2 span {
+  font-weight: 100;
+  color: #E9F2FF;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--prim-color-4);
+  color: var(--prim-color-3);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  z-index: 100;
+  box-shadow: 0 0.8rem 1.6rem var(--lan-shadow);
+
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(25); */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* transform: translateY(0); */
+}
+
+@media (max-width: 768px) {
+    .navbar .nav2{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5em;
+        height: 5em;
+        gap: 0.7em;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .buttons a {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,64 @@
+:root {
+    --bg-color: #EDF2FF; /* dark: #2B2F37*/
+    --prim-color-1: #7B91C5; /* #556690 */
+    --prim-color-2: #556690; /* #7B91C5 */
+    --prim-color-3: #2B2F37; /* #EDF2FF */
+    --prim-color-4: #7B91C5; /* #3D4E76*/
+    --cur-lan: #flagEng;
+    --lan-show:none;
+    --lan-shadow:#13223526;
+    --lan-hover:#c5ccd5;
+    --light:true;
+    --float-ld: left;
+    --ld-color:#F7C215;
+    --cur-lan:en;
+}
+
+/* Font config. DO NOT TOUCH */
+.iosevka-charon-light {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.iosevka-charon-regular {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.iosevka-charon-medium {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.iosevka-charon-bold {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.iosevka-charon-light-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.iosevka-charon-regular-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.iosevka-charon-medium-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.iosevka-charon-bold-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 700;
+  font-style: italic;
+}

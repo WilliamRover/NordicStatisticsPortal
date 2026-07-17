@@ -1,0 +1,107 @@
+{
+    "navbar": {
+        "title": "NORDIC STATISTICS PORTAL",
+        "left-side": {
+            "home": "Home",
+            "chart": "Chart",
+            "map": "Map"
+        },
+        "lan": [ 
+            {
+                "innerImg": "../Components/Navbar/img/Flag_of_England.png",
+                "innerSpan": "In English", 
+                "lang":"en"
+            },
+            {
+                "innerImg":"../Components/Navbar/img/Flag_of_Finland-01.png",
+                "innerSpan":"Suomeksi",
+                "lang": "fi"
+            },
+            {
+                "innerImg":"../Components/Navbar/img/Flag_of_Sweden.png",
+                "innerSpan":"På Svenska",
+                "lang": "sv"
+            }
+        ],
+        "theme": ["Light mode", "Dark mode"]
+    },
+
+    "footer": {
+
+    },
+
+    "homepage": {
+        "intro": {
+            "welcome": "WELCOME TO NORDIC STATISTICS PORTAL"
+        },
+        "midpage": {
+            "select": "SELECT DATA VISUALISATION TYPE",
+            "chart": "CHARTS",
+            "map": "MAP" 
+        }
+    },
+
+    "chart": {
+        "overlay": {
+            "missingCountry": "Please choose desired country",
+            "missingData": "No data item selected",
+            "noClear": "What is there to clear...",
+            "missingPrediction": "Need at least 2 data item",
+            "noPrediction": "There's no data to predict...",
+            "prediction": "Prediction added",
+            "noDownload": "No chart to download...",
+            "download": "Downloading chart...",
+            "generate": "Generating chart...",
+            "reset": "Resetting chart..."
+        },
+        "generalParameter": {
+            "title": "General parameters:",
+            "years": "Years:",
+            "fromYear": " from ",
+            "toYear": " to ",
+            "countries": "Country:"
+        },
+        "chartArea": {
+            "dropTxt": "CHART AREA"
+        },
+        "properties": {
+            "predictBtn": "ADD PREDICTION FOR NEXT YEAR",
+            "downloadPng": "DOWNLOAD PNG",
+            "downloadSvg": "DOWNLOAD SVG",
+            "generateChart": "GENERATE CHART",
+            "clearChart": "CLEAR CHART"
+        },
+        "dragItem": {
+            "title": "Drag and drop your desired data item to chart area",
+            "dataItem": {
+                "marriages": "MARRIAGES",
+                "divorces": "DIVORCES",
+                "population": "POPULATION",
+                "deaths": "DEATHS",
+                "liveBirths": "LIVE BIRTHS"
+            },
+            "chartType": {
+                "line": "Lines",
+                "bar": "Bar"
+            }
+        }
+    },
+
+    "map": {
+        "generalParameter": {
+            "title": "General parameters:",
+            "years": "Years:"
+        },
+        "indicator": {
+            "low": "Low",
+            "high": "High"
+        },
+        "showData": "Showing data",
+        "chart": {
+            "title": "Chart",
+            "desc": "For more detailed charts, please use chart page",
+            "clickCountry": "CLICK A COUNTRY TO SHOW CHART THROUGHOUT THE YEAR",
+            "noData": "Country has no data at any year"
+        }
+    }
+}

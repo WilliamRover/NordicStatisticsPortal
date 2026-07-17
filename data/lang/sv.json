@@ -1,0 +1,107 @@
+{
+    "navbar": {
+        "title": "NORDISK STATISTIKPORTAL",
+        "left-side": {
+            "home": "Hemsida",
+            "chart": "Diagram",
+            "map": "Karta"
+        },
+        "lan": [ 
+            {
+                "innerImg":"../Components/Navbar/img/Flag_of_Sweden.png",
+                "innerSpan":"På Svenska",
+                "lang": "sv"
+            },
+            {
+                "innerImg": "../Components/Navbar/img/Flag_of_England.png",
+                "innerSpan": "In English", 
+                "lang":"en"
+            },
+            {
+                "innerImg":"../Components/Navbar/img/Flag_of_Finland-01.png",
+                "innerSpan":"Suomeksi",
+                "lang": "fi"
+            }
+        ],
+        "theme": ["Ljusläge", "Mörkt läge"]
+    },
+
+    "footer": {
+
+    },
+
+    "homepage": {
+        "intro": {
+            "welcome": "VÄLKOMMEN TILL DEN NORDISKA STATISTIKPORTALEN"
+        },
+        "midpage": {
+            "select": "VÄLJ DATAVISUALISERINGSTYP",
+            "chart": "DIAGRAM",
+            "map": "KARTA"
+        }
+    },
+
+    "chart": {
+        "overlay": {
+            "missingCountry": "Välj önskat land",
+            "missingData": "Inget dataobjekt valt",
+            "noClear": "Vad finns det att rensa...",
+            "missingPrediction": "Behöver minst 2 dataobjekt",
+            "noPrediction": "Det finns ingen data att förutsäga...",
+            "prediction": "Förutsägelse tillagd",
+            "noDownload": "Inget diagram att ladda ner...",
+            "download": "Ladda ner diagram...",
+            "generate": "Genererar diagram...",
+            "reset": "Återställer diagram..."
+        },
+        "generalParameter": {
+            "title": "Allmänna parametrar:",
+            "years": "År:",
+            "fromYear": " från ",
+            "toYear": " till ",
+            "countries": "Land:"
+        },
+        "chartArea": {     
+            "dropTxt": "DIAGRAMOMRÅDE"
+        },
+        "properties": {
+            "predictBtn": "LÄGG TILL FÖRUTSÄGELSE FÖR NÄSTA ÅR",
+            "downloadPng": "LADDA NER PNG",
+            "downloadSvg": "LADDA NER SVG",
+            "generateChart": "GENERERA DIAGRAM",
+            "clearChart": "RENSA DIAGRAM"
+        },
+        "dragItem": {
+            "title": "Dra och släpp önskat dataelement till diagramområdet",
+            "dataItem": {
+            "marriages": "ÄKTENSKAP",
+            "divorces": "SKILSMÄSSOR",
+            "population": "BEFOLKNING",
+            "deaths": "DÖDSFALL",
+            "liveBirths": "LEVANDE FÖDSLAR"
+        },
+        "chartType": {
+            "line": "Linjer",
+            "bar": "Stapel"
+        }
+        }
+    },
+
+    "map": {
+        "generalParameter": {
+            "title": "Allmänna parametrar:",
+            "years": "År:"
+        },
+        "indicator": {
+            "low": "Låg",
+            "high": "Hög"
+        },
+        "showData": "Visar data",
+        "chart": {
+            "title": "Diagram",
+            "desc": "För mer detaljerade diagram, vänligen använd diagramsidan",
+            "clickCountry": "KLICKA PÅ ETT LAND FÖR ATT VISA DIAGRAM UNDER HELA ÅRET",
+            "noData": "Landet har inga data för något år"
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ce255f3d20.js" crossorigin="anonymous"></script>
+    <!-- Frappe -->
+    <script src="https://unpkg.com/frappe-charts@latest/dist/frappe-charts.min.umd.js"></script>
+    <!-- Capture -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nordic Statistics Portal</title>
+    <link rel="stylesheet" href="./chart.css">
+</head>
+<body class="iosevka-charon-regular">
+    <!-- Navbar -->
+    <section id="navbar"></section>
+    <section id="main">
+        <section class="midpage">
+            <div class="parameters">
+                <span class="iosevka-charon-medium font-lg ld" idLan="chart.generalParameter.title">General parameters:</span>
+                <div class="select-year select">
+                    <span class="iosevka-charon-medium font-lg" idLan="chart.generalParameter.years">Years:</span>
+                    <span idLan="chart.generalParameter.fromYear"> from </span>
+                    <select name="" id="fromYear"></select>
+                    <span idLan="chart.generalParameter.toYear"> to </span>
+                    <select name="" id="toYear"></select>
+                </div>
+                <div class="select-country select">
+                    <span class="iosevka-charon-medium font-lg" idLan="chart.generalParameter.countries">Country:</span>
+                    <select name="" id="selectCountry">
+                        <option value="" disabled selected></option>
+                    </select>
+                    <div class="tagContainer" id="tagContainer"></div>
+                </div>
+            </div>
+
+            <div class="dragArea">
+                <div class="dropArea" id="dropArea">
+                    <div id="chartArea"></div>
+                    <span class="dropTxt" idLan="chart.chartArea.dropTxt">CHART AREA</span>
+                    <!-- drag item will be transferred here -->
+                </div>
+                <div class="properties">
+                    <div class="propertyTop property">
+                        <button id="predictBtn" idLan="chart.properties.predictBtn">ADD PREDICTION FOR NEXT YEAR</button>
+                        <button id="pngBtn" idLan="chart.properties.downloadPng">DOWNLOAD PNG</button>
+                        <button id="svgBtn" idLan="chart.properties.downloadSvg">DOWNLOAD SVG</button>
+                    </div>
+                    <div class="propertyBot property">
+                        <div class="horizontalLine"></div>
+                        <button id="generateBtn" idLan="chart.properties.generateChart">GENERATE CHART</button>
+                        <button id="resetBtn" idLan="chart.properties.clearChart">CLEAR CHART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dragItem">
+                <span class="iosevka-charon-medium font-lg ld" idLan="chart.dragItem.title">Drag and drop your desired data item to chart area</span>
+                <div class="dragContainer" id="dragContainer">
+                    <div class="dataItem" id="template" draggable="true">
+                        <div class="dragHandle">
+                            <span></span><span></span>
+                            <span></span><span></span>
+                            <span></span><span></span>
+                        </div>
+                        <div class="dragContent">
+                            <span class="iosevka-charon-medium font-lg label">DATA NAME</span>
+                            <div class="chartButtons">
+                                <button id="line" idLan="chart.dragItem.chartType.line">Lines</button>
+                                <button id="bar" idLan="chart.dragItem.chartType.bar">Bar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!-- Footer -->
+    <section id="footer"></section>
+    
+    <script src="./chart.js" async defer type="module"></script>
+    <!-- <script src="../lang.js" async defer type="module"></script> -->
+</body>
+</html>

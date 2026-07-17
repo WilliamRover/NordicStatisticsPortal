@@ -1,0 +1,107 @@
+{
+    "navbar": {
+        "title": "POHJOISMAINEN TILASTOPORTAALI",
+        "left-side": {
+            "home": "Etusivu",
+            "chart": "Diagrammi",
+            "map": "Kartaa"
+        },
+        "lan": [ 
+            {
+                "innerImg":"../Components/Navbar/img/Flag_of_Finland-01.png",
+                "innerSpan":"Suomeksi",
+                "lang": "fi"
+            },
+            {
+                "innerImg": "../Components/Navbar/img/Flag_of_England.png",
+                "innerSpan": "In English", 
+                "lang":"en"
+            },
+            {
+                "innerImg":"../Components/Navbar/img/Flag_of_Sweden.png",
+                "innerSpan":"På Svenska",
+                "lang": "sv"
+            }
+        ],
+        "theme": ["Valo tila", "Tumma tila"]
+    },
+
+    "footer": {
+
+    },
+
+    "homepage": {
+        "intro": {
+            "welcome": "TERVETULOA POHJOISMAINEN TILASTOPORTAALI"
+        },
+        "midpage": {
+            "select": "VALITSE TIETOJEN VISUALISOINTITYYPPI",
+            "chart": "DIAGRAMMI",
+            "map": "KARTAA" 
+        }
+    },
+
+    "chart": {
+    "overlay": {
+        "missingCountry": "Valitse haluamasi maa",
+        "missingData": "Ei valittua dataa",
+        "noClear": "Mitä on poistettavaa...",
+        "missingPrediction": "Tarvitaan vähintään 2 dataa",
+        "noPrediction": "Ei ole ennustettavaa dataa...",
+        "prediction": "Ennuste lisätty",
+        "noDownload": "Ei ladattavaa kaaviota...",
+        "download": "Ladataan kaaviota...",
+        "generate": "Luodaan kaaviota...",
+        "reset": "Nollataan kaaviota..."
+    },
+    "generalParameter": {
+        "title": "Yleiset parametrit:",
+        "years": "Vuodet:",
+        "fromYear": " alkaen ",
+        "toYear": " asti ",
+        "countries": "Maa:"
+    },
+    "chartArea": {
+        "dropTxt": "KAAVION ALUE"
+    },
+    "properties": {
+        "predictBtn": "LISÄÄ ENNUSTE SEURAAVALLE VUOSI",
+        "downloadPng": "LATAA PNG",
+        "downloadSvg": "LATAA SVG",
+        "generateChart": "LUO KAAVIO",
+        "clearChart": "TYHJENNÄ KAAVIO"
+    },
+    "dragItem": {
+        "title": "Raahaa ja pudota haluamasi tietoelementti kaavioalueelle",
+        "dataItem": {
+        "marriages": "AVIOLIITOT",
+        "divorces": "EROJEN MÄÄRÄ",
+        "population": "VÄESTÖ",
+        "deaths": "KUOLEMAT",
+        "liveBirths": "ELÄVÄNÄ SYNTYNEET"
+    },
+    "chartType": {
+        "line": "Viivat",
+        "bar": "Pylväs"
+    }
+    }
+},
+
+    "map": {
+        "generalParameter": {
+            "title": "Yleiset parametrit:",
+            "years": "Vuodet:"
+        },
+        "indicator": {
+            "low": "Matala",
+            "high": "Korkea"
+        },
+        "showData": "Näytetään tiedot",
+        "chart": {
+            "title": "Diagrammi",
+            "desc": "Tarkempia kaavioita varten käytä kaaviosivua",
+            "clickCountry": "NAPSAUTA MAATA NÄYTTÄÄKSESI KAAVION KOKO VUODEN AJALTA",
+            "noData": "Maalla ei ole tietoja miltään vuodelta"
+        }
+    }
+}

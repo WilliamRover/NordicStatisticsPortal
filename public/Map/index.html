@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ce255f3d20.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Frappe -->
+    <script src="https://unpkg.com/frappe-charts@latest/dist/frappe-charts.min.umd.js"></script>
+    <!-- Capture -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nordic Statistics Portal</title>
+    <link rel="stylesheet" href="./map.css">
+</head>
+<body class="iosevka-charon-regular">
+    <!-- Navbar -->
+    <section id="navbar"></section>
+    <section id="main">
+        <section class="midpage">
+            <div class="parameters">
+                <span class="iosevka-charon-medium font-lg ld" idLan="map.generalParameter.title">General parameters:</span>
+                <div class="select-year select">
+                    <span class="iosevka-charon-medium font-lg" idLan="map.generalParameter.years">Years:</span>
+                    <select name="" id="year"></select>
+                </div>
+            </div>
+
+            <div class="mapArea">
+                <div id="map"></div>
+                <div class="properties">
+                    <div class="propertyTop property">
+                        <button id="pngBtn" idLan="chart.properties.downloadPng">DOWNLOAD PNG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="indicator">
+                <div class="bar"></div>
+                <div class="indicatorTxt">
+                    <span idLan="map.indicator.low">Low</span>
+                    <span idLan="map.indicator.high">High</span>
+                </div>
+            </div>
+            <div class="showData">
+                <span class="iosevka-charon-medium font-lg ld" idLan="map.showData">Showing data</span>
+                <div class="dataContainer" id="dataContainer">
+                    <div class="dataItem" id="template">
+                        <span class="iosevka-charon-medium font-lg label">DATA NAME</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <span class="iosevka-charon-medium font-lg ld" idLan="map.chart.title">Chart</span>
+                <p idLan="map.chart.desc">for more detailed charts, please use chart page</p>
+                <div class="chartArea" id="chartArea">
+                    <div id="chartDraw"></div>
+                    <span class="chartTxt" idLan="map.chart.clickCountry">CLICK A COUNTRY TO SHOW CHART THROUGHOUT THE YEAR</span>
+                    <!-- drag item will be transferred here -->
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Footer -->
+    <section id="footer"></section>
+    <script src="./map.js" async defer type="module"></script>
+    <!-- <script src="../lang.js" async defer type="module"></script> -->
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "query": [
+    {
+      "code": "reporting country",
+      "selection": {
+        "filter": "item",
+        "values": []
+      }
+    },
+    {
+      "code": "type",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "Marriages"
+        ]
+      }
+    },
+    {
+      "code": "time",
+      "selection": {
+        "filter": "item",
+        "values": []
+      }
+    }
+  ],
+  "response": {
+    "format": "json"
+  }
+}
